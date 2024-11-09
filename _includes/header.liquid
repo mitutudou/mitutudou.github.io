@@ -67,6 +67,7 @@
                     {% assign has_active_child = true %}
                   {% endif %}
                 {% endfor %}
+                <!--
                 <li class="nav-item dropdown {% if page.title == p.title or has_active_child %}active{% endif %}">
                   <a
                     class="nav-link dropdown-toggle"
@@ -77,6 +78,7 @@
                     aria-haspopup="true"
                     aria-expanded="false"
                   >
+                  -->
                     {{- p.title }}
                     {% if page.title == p.title or has_active_child %}
                       <span class="sr-only">(current)</span>
